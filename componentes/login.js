@@ -7,6 +7,9 @@ import { StyleSheet,
   TextInput} from 'react-native';
 
 function Home({navigation})  {
+ // const [usuario, setUsuario] = useState()
+  //const [contraseña, setContraseña] = useState()
+   
 
     return(
       <View style = {styles.container}>
@@ -14,20 +17,20 @@ function Home({navigation})  {
           <Text style={styles.text}>LOGIN</Text>
           
         </View>
-        
-        <Image source={{uri:'https://c0.klipartz.com/pngpicture/636/141/sticker-png-computer-icons-user-s-included-miscellaneous-user-profile.png'}}/>
+
+        <Image source={require('./img/login.png')}/>
         <View style={styles.lo}>
-        <Text style={{color:'white', textAlign:'left'}}>Usuario: </Text>
+        <Text style={{color:'white', textAlign:'left'}}> Usuario: </Text>
         <TextInput
           style = {{height: 40, borderColor: 'red', borderWidth:2, width: 150,  borderRadius:15,marginLeft:10, color:'white', textAlign: 'center',}}
-         
+       
         /> 
      
         <Text style={styles.a}>Contraseña:</Text>
-        <TextInput
+        <TextInput 
           style = {{height: 40, borderColor: 'green', borderWidth:2, width: 150, textAlign: 'center',
            borderRadius:15, marginLeft: 10, color:'white'}} secureTextEntry={true}
-          
+           
         > </TextInput>
         
         </View>

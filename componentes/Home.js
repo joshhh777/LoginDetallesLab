@@ -41,10 +41,9 @@ function Item(props){
                 data={lista.length > 0 ? lista : []}
                 renderItem={({item})=>{
                  return(
-                 <Item  image={item.small_cover_image} title={item.title} summary={item.summary} navigation={navigation}/>)
+                 <Item  image={item.medium_cover_image} title={item.title} summary={item.summary} navigation={navigation}/>)
                 }}
                  keyExtractor={item => item.id}
-                
                  />
             </View>           
         );    

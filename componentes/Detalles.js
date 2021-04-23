@@ -3,7 +3,6 @@ import {View, Text, Image, SafeAreaView, ScrollView, StyleSheet} from 'react-nat
 
 function Detalles({route})  {
     const {image,title,summary} = route.params;
-
     return(
 
                 <View style={estilos.container}>
